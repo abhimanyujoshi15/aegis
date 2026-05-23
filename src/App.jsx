@@ -5,7 +5,7 @@ import NetworkGraph from './components/NetworkGraph';
 import TimelineView from './components/TimelineView';
 import ReportGenerator from './components/ReportGenerator';
 
-const API_BASE = 'http://127.0.0.1:8000';
+const API_BASE = 'https://aegis-backend-2fzl.onrender.com';
 
 function AuthGate({ onAuthenticated }) {
   const [mode, setMode] = useState('login');
