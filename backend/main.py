@@ -238,5 +238,12 @@ async def generate_report_metadata(flagged_ids: List[str] = Form(...), notes: st
 
 if __name__ == "__main__":
     import uvicorn
-    # Launch uvicorn developer server locally on port 8000
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+    import os
+
+    port = int(os.environ.get("PORT", 8000))
+
+    uvicorn.run(
+        "main:app",
+        host="0.0.0.0",
+        port=port
+    )
