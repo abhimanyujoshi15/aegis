@@ -40,7 +40,7 @@ export default function Dashboard({ authToken, caseData, investigator, onUploadS
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/upload', {
+      const response = await fetch('https://aegis-backend-2fzl.onrender.com/api/upload', {
         method: 'POST',
         headers: { Authorization: `Bearer ${authToken}` },
         body: formData,

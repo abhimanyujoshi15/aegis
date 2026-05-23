@@ -55,7 +55,7 @@ export default function AIAgent({ authToken, caseData, onPinEvidence, pinnedEvid
     setQuery('');
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/search', {
+      const response = await fetch('https://aegis-backend-2fzl.onrender.com/api/search', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
