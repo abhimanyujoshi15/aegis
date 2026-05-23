@@ -139,7 +139,7 @@ export default function NetworkGraph({ caseData, onSelectContact }) {
               <circle r="36" fill="rgba(30, 58, 138, 0.08)" stroke="var(--accent-cyan)" strokeWidth="2.5" />
               <circle r="26" fill="url(#suspectGrad)" />
               <circle r="12" fill="#ffffff" stroke="var(--accent-cyan)" strokeWidth="1" />
-              <text y="3.5" textAnchor="middle" fill="var(--accent-cyan)" fontSize="9" fontWeight="bold" fontFamily="var(--font-headings)">
+              <text y="3.5" textAnchor="middle" fill="rgb(0,0,0)" fontSize="9" fontWeight="bold" fontFamily="var(--font-headings)">
                 TARGET
               </text>
             </g>
